@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7 seg disp</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css2.css">
+  </head>
+<body onload="reset()">
+<div class="con">
+
+
+
+<button class= "button1 btn3" onclick="prev()">Previous</button>
+
+<button class= "button1 btn2" onclick="reset()">Reset</button>
+
+<button class= "button1 btn1" onclick="next()">Next</button>
+
+
+
+</div>
+
+<div class="disp">
+  <div id=reg1 class="seg a"></div>
+  <div id=reg2 class="seg b"></div>
+  <div id=reg3 class="seg c"></div>
+  <div id=reg4 class="seg d"></div>
+  <div id=reg5 class="seg e"></div>
+  <div id=reg6 class="seg f"></div>
+  <div id=reg7 class="seg g"></div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+var x2=0,x1,x3;
+
+function next(){
+
+  x2++;
+  if (x2==10){
+    x2=0;
+    mainfunc(x2);
+  }else{
+    mainfunc(x2);
+  }
+}
+
+function prev(){
+  x2--;
+   if (x2==-1){
+     x2=9;
+     mainfunc(x2);
+   }else{
+     mainfunc(x2);
+   }
+  }
+
+function reset(){
+
+x2=0;
+mainfunc(x2);
+
+}
+
+function mainfunc(x3){
+
+switch(x3){
+
+//function func1(){
+case 1 :
+document.getElementById("reg2").style.opacity = "1";
+document.getElementById("reg3").style.opacity = "1";
+
+//change
+  document.getElementById("reg1").style.opacity = "0.2";
+  document.getElementById("reg4").style.opacity = "0.2";
+  document.getElementById("reg5").style.opacity = "0.2";
+  document.getElementById("reg6").style.opacity = "0.2";
+  document.getElementById("reg7").style.opacity = "0.2";
+
+break;
+
+//function func2(){
+case 2:
+
+  document.getElementById("reg1").style.opacity = "1";
+  document.getElementById("reg2").style.opacity = "1";
+  document.getElementById("reg4").style.opacity = "1";
+  document.getElementById("reg5").style.opacity = "1";
+  document.getElementById("reg7").style.opacity = "1";
+//change
+document.getElementById("reg3").style.opacity = "0.2";
+document.getElementById("reg6").style.opacity = "0.2";
+break;
+
+//function func3(){
+case 3:
+
+  document.getElementById("reg1").style.opacity = "1";
+  document.getElementById("reg3").style.opacity = "1";
+  document.getElementById("reg4").style.opacity = "1";
+  document.getElementById("reg2").style.opacity = "1";
+  document.getElementById("reg7").style.opacity = "1";
+//change
+ document.getElementById("reg6").style.opacity = "0.2";
+ document.getElementById("reg5").style.opacity = "0.2";
+break;
+
+
+
+//function func4(){
+case 4:
+
+
+  document.getElementById("reg2").style.opacity = "1";
+  document.getElementById("reg3").style.opacity = "1";
+  document.getElementById("reg6").style.opacity = "1";
+  document.getElementById("reg7").style.opacity = "1";
+//change
+  document.getElementById("reg1").style.opacity = "0.2";
+  document.getElementById("reg4").style.opacity = "0.2";
+  document.getElementById("reg5").style.opacity = "0.2";
+
+
+break;
+
+//setTimeout(1000);
+case 5:
+
+    document.getElementById("reg1").style.opacity = "1";
+    document.getElementById("reg3").style.opacity = "1";
+    document.getElementById("reg4").style.opacity = "1";
+    document.getElementById("reg6").style.opacity = "1";
+    document.getElementById("reg7").style.opacity = "1";
+  //change
+  document.getElementById("reg2").style.opacity = "0.2";
+  document.getElementById("reg5").style.opacity = "0.2";
+
+
+  break;
+
+//setTimeout(1000);
+case 6:
+    document.getElementById("reg1").style.opacity = "1";
+    document.getElementById("reg3").style.opacity = "1";
+    document.getElementById("reg4").style.opacity = "1";
+    document.getElementById("reg6").style.opacity = "1";
+    document.getElementById("reg7").style.opacity = "1";
+    document.getElementById("reg5").style.opacity = "1";
+
+  //change
+  document.getElementById("reg2").style.opacity = "0.2";
+
+  break;
+//setTimeout(1000);
+case 7:
+
+  document.getElementById("reg1").style.opacity = "1";
+  document.getElementById("reg2").style.opacity = "1";
+  document.getElementById("reg3").style.opacity = "1";
+
+//change
+  document.getElementById("reg4").style.opacity = "0.2";
+  document.getElementById("reg6").style.opacity = "0.2";
+  document.getElementById("reg7").style.opacity = "0.2";
+  document.getElementById("reg5").style.opacity = "0.2";
+
+break;
+case 8:
+
+  document.getElementById("reg1").style.opacity = "1";
+  document.getElementById("reg3").style.opacity = "1";
+  document.getElementById("reg4").style.opacity = "1";
+  document.getElementById("reg6").style.opacity = "1";
+  document.getElementById("reg2").style.opacity = "1";
+  document.getElementById("reg5").style.opacity = "1";
+  document.getElementById("reg7").style.opacity = "1";
+
+//change
+
+break;
+case 9:
+
+  document.getElementById("reg1").style.opacity = "1";
+  document.getElementById("reg2").style.opacity = "1";
+  document.getElementById("reg3").style.opacity = "1";
+  document.getElementById("reg4").style.opacity = "1";
+  document.getElementById("reg6").style.opacity = "1";
+  document.getElementById("reg7").style.opacity = "1";
+
+//change
+document.getElementById("reg5").style.opacity = "0.2";
+break;
+
+case 0:
+
+  document.getElementById("reg1").style.opacity = "1";
+  document.getElementById("reg3").style.opacity = "1";
+  document.getElementById("reg4").style.opacity = "1";
+  document.getElementById("reg6").style.opacity = "1";
+  document.getElementById("reg2").style.opacity = "1";
+  document.getElementById("reg5").style.opacity = "1";
+
+//change
+ document.getElementById("reg7").style.opacity = "0.2";
+
+break;
+
+}   //switch
+
+} // func
+
+
+</script>
+
+
+
+</body>
+
+</html>

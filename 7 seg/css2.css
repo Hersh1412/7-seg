@@ -1,0 +1,197 @@
+body{
+ background-color: black;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+
+.disp{
+
+  position: relative;
+  top:50px;
+  right: 90px;
+}
+
+.seg{
+height:100px;
+width:10px;
+background-color: #a29bfe;
+border-radius: 9999px;
+
+}
+
+
+.a{
+  position: absolute;
+  top: -45px;
+  left: 90px;
+  transform: rotate(90deg);
+}
+
+.b{
+  position: absolute;
+  top: 15px;
+  left: 150px;
+
+}
+
+
+
+.c{
+  position: absolute;
+  top: 130px;
+  left: 150px;
+
+}
+
+.d{
+  position: absolute;
+  top: 190px;
+  left: 90px;
+  transform: rotate(90deg);
+
+}
+.e{
+
+    position: absolute;
+    top: 130px;
+    left:30px;
+
+}
+
+.f{
+  position: absolute;
+  top: 15px;
+  left:30px;
+
+}
+
+
+.g{
+
+    position: absolute;
+    top: 73px;
+    left: 90px;
+    transform: rotate(90deg);
+
+
+}
+
+
+
+.con{
+text-align: center;
+margin: 3px;
+position: absolute;
+top:425px;
+
+}
+.button{
+
+
+}
+.btn1 {
+  border-radius: 3px;
+  border: 3px solid #74b9ff;
+  padding: 10px 30px;
+  font-size: 25px;
+  font-family: monospace;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #74b9ff 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+.btn1:hover {
+  background-position: left bottom;
+}
+
+.btn1 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: #74b9ff;
+  transition: all .6s ease-out;
+
+}
+
+.btn1:hover {
+  color: white;
+}
+
+.btn3 {
+  border-radius: 3px;
+  border: 3px solid #74b9ff;
+  padding: 10px 30px;
+  font-size: 25px;
+  font-family: monospace;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to left, #74b9ff 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .5s ease-out;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+.btn3:hover {
+  background-position: right bottom;
+}
+
+.btn3 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: #74b9ff;
+  transition: all .6s ease-out;
+
+}
+
+.btn3:hover {
+  color: white;
+}
+
+.btn2 {
+  border-radius: 3px;
+  border: 3px solid #74b9ff;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: monospace;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  background-position:  center;
+  transition: all .5s ease-out;
+}
+
+.btn2:hover {
+
+
+    background: #74b9ff;
+
+}
+
+.btn2 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: #74b9ff;
+  transition: all .6s ease-out;
+
+}
+
+.btn2:hover {
+  color: white;
+}
